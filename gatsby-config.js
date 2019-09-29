@@ -1,3 +1,7 @@
+console.log('ENV!!')
+console.log(process.env);
+
+
 module.exports = {
   siteMetadata: {
     title: "My super blog",
@@ -17,7 +21,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.DEPLOY_URL
-          ? "romantic-heyrovsky-d4630a.netlify.com"
+          ? "https://warm-meadow-05937.herokuapp.com/"
           : "http://localhost:1337",
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
