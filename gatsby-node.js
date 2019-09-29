@@ -72,5 +72,5 @@ exports.createPages = ({ actions, graphql }) => {
   })
   // query for articles and authors nodes to use in creating pages;
 
-  return Promise.all(getArticles, getAuthors);
+  return Promise.all([getArticles, getAuthors]);
 }
